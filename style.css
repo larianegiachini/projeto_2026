@@ -1,18 +1,23 @@
+/* =========================
+   CONFIGURAÇÃO GERAL
+========================= */
+
 body {
     margin: 0;
     padding: 0;
-    background: url('https://images.unsplash.com/photo-1534430480872-3498386e7856') no-repeat center center/cover;
-    background-color: black;
+    background: 
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+        url('https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2') 
+        no-repeat center center fixed;
+    background-size: cover;
     font-family: Arial, sans-serif;
     color: white;
     text-align: center;
 }
 
-.overlay {
-    background-color: rgba(0,0,0,0.7);
-    min-height: 100vh;
-    padding-top: 100px;
-}
+/* =========================
+   BARRA SUPERIOR
+========================= */
 
 .top-bar {
     position: fixed;
@@ -23,18 +28,84 @@ body {
     justify-content: space-around;
     padding: 10px;
     font-size: 18px;
+    z-index: 20;
 }
 
-.titulo {
+/* =========================
+   PERFIL (FOTO + NOME)
+========================= */
+
+.perfil {
+    position: fixed;
+    top: 60px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 15;
+}
+
+.perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid orange;
+    object-fit: cover;
+}
+
+/* NOME COM EFEITO NEON */
+
+.nome-grande {
     font-family: 'Great Vibes', cursive;
-    font-size: 60px;
-    margin-bottom: 10px;
+    font-size: 55px;
+    color: #fff;
+    text-shadow:
+        0 0 5px orange,
+        0 0 10px orange,
+        0 0 20px orange,
+        0 0 40px darkorange;
+    animation: neonPulse 2s infinite alternate;
 }
 
-h2 {
+.nome-grande span {
+    display: block;
     font-family: 'Orbitron', sans-serif;
-    margin-bottom: 50px;
+    font-size: 20px;
+    margin-top: 5px;
 }
+
+/* ANIMAÇÃO NEON */
+
+@keyframes neonPulse {
+    from {
+        text-shadow:
+            0 0 5px orange,
+            0 0 10px orange,
+            0 0 20px orange,
+            0 0 40px darkorange;
+    }
+    to {
+        text-shadow:
+            0 0 10px orange,
+            0 0 20px orange,
+            0 0 40px orange,
+            0 0 80px darkorange;
+    }
+}
+
+/* =========================
+   CONTEÚDO CENTRAL
+========================= */
+
+.overlay {
+    background-color: rgba(0,0,0,0.6);
+    min-height: 100vh;
+    padding-top: 250px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
 
 .botoes {
     display: flex;
@@ -56,4 +127,35 @@ button {
 button:hover {
     transform: scale(1.1);
     background-color: darkorange;
+}
+
+/* =========================
+   ANIMAÇÃO DE ENTRADA
+========================= */
+
+.overlay,
+.perfil,
+.botoes {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.overlay {
+    animation-delay: 0.3s;
+}
+
+.perfil {
+    animation-delay: 0.6s;
+}
+
+.botoes {
+    animation-delay: 0.9s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
