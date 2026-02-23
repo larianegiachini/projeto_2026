@@ -35,18 +35,19 @@ function atualizarRelogio() {
 }
 
 setInterval(atualizarRelogio, 1000);
+atualizarRelogio();
 
 // =========================
-// COTAÇÃO DÓLAR E EURO
+// COTAÇÃO DÓLAR E EURO (VERSÃO CORRIGIDA)
 // =========================
 
 async function buscarCotacao() {
     try {
-        const resposta = await fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL");
+        const resposta = await fetch("https://open.er-api.com/v6/latest/BRL");
         const dados = await resposta.json();
 
-        const dolar = parseFloat(dados.USDBRL.bid).toFixed(2);
-        const euro = parseFloat(dados.EURBRL.bid).toFixed(2);
+        const dolar = (1 / dados.rates.USD).toFixed(2);
+        const euro = (1 / dados.rates.EUR).toFixed(2);
 
         document.getElementById("currency").innerText =
             "Dólar: R$ " + dolar + " | Euro: R$ " + euro;
@@ -54,6 +55,7 @@ async function buscarCotacao() {
     } catch (erro) {
         document.getElementById("currency").innerText =
             "Erro ao buscar cotação";
+        console.error("Erro:", erro);
     }
 }
 
