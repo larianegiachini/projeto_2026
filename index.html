@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Lariane Giachini Bachega</title>
+
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- BARRA SUPERIOR -->
     <div class="top-bar">
         <div id="clock">Horário Brasília: --:--:--</div>
         <div id="currency">Dólar: -- | Euro: --</div>
     </div>
 
-    <!-- FOTO + NOME -->
+    <!-- PERFIL -->
     <div class="perfil">
         <img src="minha-foto.jpg" alt="Foto Lariane">
         <div class="nome-grande">
@@ -22,15 +30,52 @@
         </div>
     </div>
 
-    <div class="overlay">
-        <div class="botoes">
-            <button onclick="abrirCalculadora()">🧮</button>
-            <button onclick="abrirInstagram()">📸</button>
-            <button onclick="abrirLinkedin()">💼</button>
-            <button onclick="abrirFacebook()">📘</button>
+    <!-- BIOGRAFIA CENTRAL -->
+    <div class="biografia-container">
+        <div class="biografia">
+
+            <h2>Desenvolvedora Iniciante | Apaixonada por Tecnologia e Inovação</h2>
+
+            <p>
+                Olá! Sou a Lariane, e meu caminho no mundo do desenvolvimento começou 
+                com um desafio: transformar o "zero absoluto" em algo real e funcional. 
+                Acredito que a tecnologia é a ferramenta mais poderosa para conectar 
+                pessoas e solucionar problemas, e é isso que me motiva a aprender 
+                algo novo todos os dias.
+            </p>
+
+            <h3>🚀 Meu Primeiro Projeto: "Projeto 2026"</h3>
+
+            <p>
+                O meu primeiro marco como desenvolvedora foi a criação do Projeto 2026. 
+                O que começou como um simples arquivo HTML "Olá Mundo", rapidamente 
+                evoluiu para um dashboard tecnológico completo.
+            </p>
+
+            <p><strong>Estruturação com HTML5:</strong> Organização de conteúdo e links.</p>
+            <p><strong>Estilização com CSS3:</strong> Design futurista com transparências e layout moderno.</p>
+            <p><strong>Interatividade com JavaScript:</strong> Consumo de APIs em tempo real para cotações e horário.</p>
+            <p><strong>Versionamento com Git & GitHub:</strong> Ciclo completo até publicação no GitHub Pages.</p>
+
+            <h3>🛠️ Minha Caixa de Ferramentas</h3>
+
+            <p><strong>Linguagens:</strong> HTML5, CSS3 e JavaScript.</p>
+            <p><strong>Ferramentas:</strong> VS Code, Git, GitHub.</p>
+            <p><strong>Foco Atual:</strong> Desenvolvimento Front-end e UX/UI Design.</p>
+
         </div>
     </div>
 
+    <!-- BOTÕES INFERIOR DIREITO -->
+    <div class="botoes">
+        <button onclick="abrirCalculadora()">🧮</button>
+        <button onclick="abrirInstagram()">📸</button>
+        <button onclick="abrirLinkedin()">💼</button>
+        <button onclick="abrirFacebook()">📘</button>
+    </div>
+
+    <!-- JS -->
     <script src="script.js"></script>
+
 </body>
 </html>
