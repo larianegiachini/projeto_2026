@@ -1,91 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lariane Giachini - Dev</title>
-    <style>
-        /* Fundo Preto e Estilo Geral */
-        body {
-            background-color: #000000;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-
-        h1 {
-            color: #ff8c00; /* Laranja */
-            margin-bottom: 30px;
-            font-size: 2rem;
-        }
-
-        /* Container dos Botões */
-        .menu {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 400px;
-        }
-
-        /* Botões em formato de "Bola" */
-        .btn {
-            width: 120px;
-            height: 120px;
-            background-color: #ff8c00; /* Laranja Futebol */
-            border: 4px solid #ffffff;
-            border-radius: 50%; /* Faz ficar redondo */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.9rem;
-            transition: transform 0.3s, background-color 0.3s;
-            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
-            cursor: pointer;
-        }
-
-        /* Efeito ao passar o mouse */
-        .btn:hover {
-            transform: scale(1.1) rotate(10deg);
-            background-color: #ffae42;
-        }
-
-        /* Botão especial do WhatsApp (ocupa a largura inteira embaixo) */
-        .btn-wa {
-            grid-column: span 2;
-            width: 100%;
-            height: 60px;
-            border-radius: 30px;
-            background-color: #25d366; /* Verde WhatsApp */
-            border: none;
-            margin-top: 10px;
-            color: white;
-        }
-    </style>
+    <title>Lariane Giachini Bachega</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Lariane Giachini Bachega<br>Desenvolvedora iniciante</h1>
-
-    <div class="menu">
-        <a href="https://www.google.com/search?q=calculadora" target="_blank" class="btn">Calculadora</a>
-
-        <a href="https://www.instagram.com/larigiachini" target="_blank" class="btn">Instagram</a>
-
-        <a href="https://www.linkedin.com/in/lariane-giachini-bachega-bb441a232/" target="_blank" class="btn">LinkedIn</a>
-
-        <a href="https://www.facebook.com/larigiachini/" target="_blank" class="btn">Facebook</a>
-
-        <a href="https://wa.me/5519991093747" target="_blank" class="btn btn-wa">Falar no WhatsApp</a>
+    <div class="top-bar">
+        <div id="clock">Horário Brasília: --:--:--</div>
+        <div id="currency">Dólar: -- | Euro: --</div>
     </div>
 
+    <div class="overlay">
+        <h1 class="titulo">Lariane Giachini Bachega</h1>
+        <h2>Desenvolvedora Iniciante</h2>
+
+        <div class="botoes">
+            <button onclick="abrirCalculadora()">🧮</button>
+            <button onclick="abrirInstagram()">📸</button>
+            <button onclick="abrirLinkedin()">💼</button>
+            <button onclick="abrirFacebook()">📘</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
