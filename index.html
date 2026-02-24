@@ -1,81 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Lariane Giachini Bachega</title>
-
-    <!-- Responsividade -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bachega | Armazenamento de Dados em Nuvem</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- BARRA SUPERIOR -->
-    <div class="top-bar">
-        <div id="clock">Horário Brasília: --:--:--</div>
-        <div id="currency">Dólar: -- | Euro: --</div>
+<header>
+    <div class="container nav">
+        <h1>Bachega</h1>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
     </div>
+</header>
 
-    <!-- PERFIL -->
-    <div class="perfil">
-        <img src="minha-foto.jpg" alt="Foto Lariane">
-        <div class="nome-grande">
-            Lariane Giachini Bachega
-            <span>Desenvolvedora Iniciante</span>
+<section class="hero">
+    <div class="container">
+        <h2>Especialista em Armazenamento de Dados em Nuvem</h2>
+        <p>Proteção avançada para pequenas empresas.</p>
+        <a href="#contato" class="btn">Solicitar Diagnóstico</a>
+    </div>
+</section>
+
+<section id="sobre" class="section">
+    <div class="container">
+        <h2>Sobre a Bachega</h2>
+        <p>
+            Soluções completas de Cloud Backup, Object Storage e proteção contra ransomware.
+        </p>
+        <button class="toggle-btn">Ler mais</button>
+        <div class="hidden-content">
+            <p>
+                Atuamos com monitoramento 24x7, criptografia ponta-a-ponta, deduplicação,
+                retenção inteligente e restauração rápida via web.
+            </p>
         </div>
     </div>
+</section>
 
-    <!-- BIOGRAFIA CENTRAL -->
-    <div class="biografia-container">
-        <div class="biografia">
+<section id="servicos" class="section light">
+    <div class="container">
+        <h2>Serviços</h2>
 
-            <h2>Desenvolvedora Iniciante | Apaixonada por Tecnologia e Inovação</h2>
+        <div class="cards">
 
-            <p>
-                Olá! Sou a Lariane, e meu caminho no mundo do desenvolvimento começou 
-                com um desafio: transformar o "zero absoluto" em algo real e funcional. 
-                Acredito que a tecnologia é a ferramenta mais poderosa para conectar 
-                pessoas e solucionar problemas, e é isso que me motiva a aprender 
-                algo novo todos os dias.
-            </p>
+            <div class="card">
+                <h3>Backup de Arquivos</h3>
+                <p>Proteção de servidores e estações.</p>
+                <button class="toggle-btn">Detalhes</button>
+                <div class="hidden-content">
+                    <p>Compatível com Windows, Linux e NAS.</p>
+                </div>
+            </div>
 
-            <h3>🚀 Meu Primeiro Projeto: "Projeto 2026"</h3>
+            <div class="card">
+                <h3>Backup de Banco de Dados</h3>
+                <p>SQL, MySQL, Firebird e mais.</p>
+                <button class="toggle-btn">Detalhes</button>
+                <div class="hidden-content">
+                    <p>Backups consistentes com agendamento inteligente.</p>
+                </div>
+            </div>
 
-            <p>
-                O meu primeiro marco como desenvolvedora foi a criação do Projeto 2026. 
-                O que começou como um simples arquivo HTML "Olá Mundo", rapidamente 
-                evoluiu para um dashboard tecnológico completo.
-            </p>
+            <div class="card">
+                <h3>Máquinas Virtuais</h3>
+                <p>VMware e Hyper-V.</p>
+                <button class="toggle-btn">Detalhes</button>
+                <div class="hidden-content">
+                    <p>Restore granular ou full VM.</p>
+                </div>
+            </div>
 
-            <p><strong>Estruturação com HTML5:</strong> Organização de conteúdo e links.</p>
-            <p><strong>Estilização com CSS3:</strong> Design futurista com transparências e layout moderno.</p>
-            <p><strong>Interatividade com JavaScript:</strong> Consumo de APIs em tempo real para cotações e horário.</p>
-            <p><strong>Versionamento com Git & GitHub:</strong> Ciclo completo até publicação no GitHub Pages.</p>
-
-            <h3>🛠️ Minha Caixa de Ferramentas</h3>
-
-            <p><strong>Linguagens:</strong> HTML5, CSS3 e JavaScript.</p>
-            <p><strong>Ferramentas:</strong> VS Code, Git, GitHub.</p>
-            <p><strong>Foco Atual:</strong> Desenvolvimento Front-end e UX/UI Design.</p>
+            <div class="card">
+                <h3>Backup Microsoft 365</h3>
+                <p>Exchange, SharePoint, OneDrive.</p>
+                <button class="toggle-btn">Detalhes</button>
+                <div class="hidden-content">
+                    <p>Recuperação rápida e segura via interface web.</p>
+                </div>
+            </div>
 
         </div>
     </div>
+</section>
 
-    <!-- BOTÕES INFERIOR DIREITO -->
-    <div class="botoes">
-        <button onclick="abrirCalculadora()">🧮</button>
-        <button onclick="abrirInstagram()">📸</button>
-        <button onclick="abrirLinkedin()">💼</button>
-        <button onclick="abrirFacebook()">📘</button>
+<section id="diferenciais" class="section">
+    <div class="container">
+        <h2>Diferenciais</h2>
+        <ul class="lista">
+            <li>Criptografia ponta-a-ponta</li>
+            <li>Monitoramento 24×7</li>
+            <li>Relatórios e auditoria</li>
+            <li>Proteção contra ransomware</li>
+            <li>Conformidade com LGPD</li>
+        </ul>
     </div>
+</section>
 
-    <!-- JS -->
-    <script src="script.js"></script>
+<section id="contato" class="section light">
+    <div class="container">
+        <h2>Contato</h2>
+        <form id="formContato">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensagem"></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</section>
 
+<footer>
+    <p>© 2026 Bachega - Especialista em Armazenamento de Dados em Nuvem</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

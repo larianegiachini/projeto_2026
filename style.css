@@ -1,152 +1,130 @@
-/* =========================
-   CONFIGURAÇÃO GERAL
-========================= */
-
 body {
     margin: 0;
-    padding: 0;
-    background: 
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
-        url('https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=2070&auto=format&fit=crop')
-        no-repeat center center fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f9fc;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #0f3057;
+    padding: 15px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
     color: white;
-    overflow-x: hidden;
 }
 
-/* EFEITO DE MOVIMENTO SUTIL */
-body::after {
-    content: "";
-    position: fixed;
-    width: 200%;
-    height: 200%;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 100px,
-        rgba(255,255,255,0.03) 101px
-    );
-    animation: movingLights 20s linear infinite;
-    pointer-events: none;
-}
-
-@keyframes movingLights {
-    from { transform: translateX(0); }
-    to { transform: translateX(-500px); }
-}
-
-/* =========================
-   BARRA SUPERIOR
-========================= */
-
-.top-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: black;
+header ul {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    font-size: 18px;
-    z-index: 20;
-}
-
-/* =========================
-   PERFIL
-========================= */
-
-.perfil {
-    position: fixed;
-    top: 60px;
-    left: 30px;
-    display: flex;
-    align-items: center;
     gap: 20px;
-    z-index: 15;
 }
 
-.perfil img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid white;
-    object-fit: cover;
+header ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-/* NOME NEON */
-
-.nome-grande {
-    font-family: 'Great Vibes', cursive;
-    font-size: 60px;
-    color: #fff;
-    text-shadow:
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 20px #fff,
-        0 0 40px #fff;
-}
-
-/* =========================
-   BIOGRAFIA CENTRAL
-========================= */
-
-.biografia-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 100px 20px;
-}
-
-.biografia {
-    max-width: 900px;
-    background: rgba(0,0,0,0.6);
-    padding: 40px;
-    border-radius: 15px;
-    border: 2px solid white;
-    box-shadow:
-        0 0 10px #fff,
-        0 0 20px #fff,
-        0 0 40px #fff;
-    line-height: 1.6;
-    animation: fadeIn 2s ease forwards;
-}
-
-.biografia h2 {
+.hero {
+    background: linear-gradient(135deg, #0f3057, #00587a);
+    color: white;
+    padding: 120px 0;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 28px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+.section {
+    padding: 70px 0;
+    text-align: center;
 }
 
-/* =========================
-   BOTÕES INFERIOR DIREITO
-========================= */
+.light {
+    background: #e6f7f9;
+}
 
-.botoes {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+.cards {
     display: flex;
-    gap: 20px;
-    z-index: 30;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
-button {
-    background: none;
-    border: none;
-    font-size: 35px;
-    cursor: pointer;
+.card {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
     transition: 0.3s;
-    color: white;
 }
 
-button:hover {
-    transform: scale(1.2);
-    color: orange;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    background: #00a8cc;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #007ea7;
+}
+
+.toggle-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: #38ada9;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+}
+
+.lista li {
+    margin: 10px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background: #0f3057;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
