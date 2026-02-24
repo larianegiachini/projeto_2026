@@ -1,19 +1,19 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f5f9fc;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f8fb;
     color: #333;
 }
 
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
 }
 
 header {
     background: #0f3057;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .nav {
@@ -24,107 +24,108 @@ header {
 
 header h1 {
     color: white;
+    font-weight: 700;
 }
 
 header ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 header ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .hero {
     background: linear-gradient(135deg, #0f3057, #00587a);
     color: white;
-    padding: 120px 0;
+    padding: 140px 0;
     text-align: center;
 }
 
 .section {
-    padding: 70px 0;
+    padding: 90px 0;
     text-align: center;
 }
 
 .light {
-    background: #e6f7f9;
+    background: #e8f6f9;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 .card {
     background: white;
-    padding: 25px;
-    width: 260px;
-    border-radius: 12px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.07);
+    transition: 0.4s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .btn {
     background: #00a8cc;
     color: white;
-    padding: 12px 25px;
-    border-radius: 6px;
+    padding: 14px 30px;
+    border-radius: 8px;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 15px;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .btn:hover {
     background: #007ea7;
 }
 
-.toggle-btn {
-    margin-top: 10px;
-    padding: 8px 15px;
-    border: none;
-    background: #38ada9;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.hidden-content {
-    display: none;
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
-.lista {
-    list-style: none;
-    padding: 0;
-}
-
-.lista li {
-    margin: 10px 0;
-}
-
 form input, form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     margin: 10px 0;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #ccc;
 }
 
 footer {
     background: #0f3057;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    font-size: 28px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Animação Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0px);
 }

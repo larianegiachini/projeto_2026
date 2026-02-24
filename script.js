@@ -1,16 +1,20 @@
-// Botões de leitura
-document.querySelectorAll(".toggle-btn").forEach(button => {
-    button.addEventListener("click", function() {
-        const content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-            this.textContent = "Ler mais";
-        } else {
-            content.style.display = "block";
-            this.textContent = "Ocultar";
+// Scroll Animation
+function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (elementTop < windowHeight - revealPoint) {
+            element.classList.add("active");
         }
     });
-});
+}
+
+window.addEventListener("scroll", reveal);
+reveal();
 
 // Formulário
 document.getElementById("formContato").addEventListener("submit", function(e){
