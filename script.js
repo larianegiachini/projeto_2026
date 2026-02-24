@@ -1,21 +1,21 @@
-// ANIMAÇÃO AO ROLAR
+// animação ao rolar
 function reveal() {
   const reveals = document.querySelectorAll(".reveal");
 
-  reveals.forEach(element => {
+  reveals.forEach(el => {
     const windowHeight = window.innerHeight;
-    const elementTop = element.getBoundingClientRect().top;
+    const elementTop = el.getBoundingClientRect().top;
 
     if (elementTop < windowHeight - 100) {
-      element.classList.add("active");
+      el.classList.add("active");
     }
   });
 }
 
 window.addEventListener("scroll", reveal);
+reveal();
 
-
-// CURSOR PERSONALIZADO
+// cursor personalizado
 const cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove", e => {
