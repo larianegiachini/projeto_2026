@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Bachega Especialista em Armazenamento de Dados em Nuvem</title>
 
-    <!-- Fonte SaaS Moderna -->
+    <!-- Fonte Moderna -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
@@ -29,6 +28,7 @@
 
         <nav>
             <a href="#servicos">Serviços</a>
+            <a href="#infraestrutura">Infraestrutura</a>
             <a href="#planos">Planos</a>
             <a href="#contato" class="btn btn-header">Fale Conosco</a>
         </nav>
@@ -47,49 +47,71 @@
 <!-- ================= SERVIÇOS ================= -->
 <section id="servicos" class="section">
     <div class="container">
-
         <h2 class="section-title">Nossos Serviços</h2>
 
         <div class="services-grid">
 
-            <!-- CLOUD BACKUP -->
             <div class="card animate">
                 <h3>Cloud Backup</h3>
-                <p>Backup corporativo seguro e escalável.</p>
+                <p>Backup corporativo seguro, escalável e com gerenciamento remoto.</p>
                 <button class="btn toggle-btn">Mais Detalhes</button>
-
                 <div class="hidden-content">
                     <ul>
-                        <li>Plataforma fácil de operar</li>
                         <li>Gerenciamento integrado na nuvem</li>
                         <li>Monitoramento 24x7</li>
-                        <li>Contas ilimitadas sem licenciamento</li>
+                        <li>Contas ilimitadas</li>
                         <li>Criptografia ponta-a-ponta</li>
                         <li>Deduplicação de dados</li>
                         <li>Multicloud</li>
-                        <li>Arquivos, bancos de dados, servidores físicos e virtuais</li>
+                        <li>Arquivos, bancos e servidores físicos/virtuais</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- OBJECT STORAGE -->
             <div class="card animate">
                 <h3>Object Storage</h3>
                 <p>Armazenamento escalável com alta disponibilidade.</p>
                 <button class="btn toggle-btn">Mais Detalhes</button>
-
                 <div class="hidden-content">
                     <ul>
-                        <li>Restauração imediata</li>
                         <li>Sem custo upload/download</li>
                         <li>Sem custo IOPS, GET, PUT</li>
                         <li>Faturamento por volume</li>
                         <li>Imutabilidade contra ransomware</li>
-                        <li>Alta disponibilidade</li>
+                        <li>Alta performance</li>
                     </ul>
                 </div>
             </div>
 
+        </div>
+    </div>
+</section>
+
+<!-- ================= INFRAESTRUTURA ================= -->
+<section id="infraestrutura" class="section">
+    <div class="container">
+        <h2 class="section-title">Infraestrutura & Confiabilidade</h2>
+
+        <div class="services-grid">
+            <div class="card animate">
+                <h3>SLA 99.749%</h3>
+                <p>Alta disponibilidade garantindo continuidade operacional.</p>
+            </div>
+
+            <div class="card animate">
+                <h3>Data Centers Tier III</h3>
+                <p>Infraestrutura nos melhores data centers da América Latina.</p>
+            </div>
+
+            <div class="card animate">
+                <h3>Conformidade LGPD</h3>
+                <p>Proteção de dados com criptografia avançada e segurança multicamadas.</p>
+            </div>
+
+            <div class="card animate">
+                <h3>Monitoramento 24x7</h3>
+                <p>Supervisão contínua com suporte técnico especializado.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -103,7 +125,7 @@
         <p><strong>Criamos soluções confiáveis que transformam negócios e protegem o amanhã.</strong></p>
 
         <p>
-            Fundada em 2026, somos uma empresa focada em simplificar soluções de armazenamento em nuvem.
+            Fundada em 2026, somos especialistas em simplificar soluções de armazenamento em nuvem.
         </p>
 
         <p>
@@ -111,7 +133,7 @@
         </p>
 
         <p>
-            Oferecemos infraestrutura de qualidade e proteção de dados nos melhores data centers da América Latina.
+            Oferecemos infraestrutura de qualidade nos melhores data centers da América Latina.
         </p>
 
     </div>
@@ -120,11 +142,9 @@
 <!-- ================= PLANOS ================= -->
 <section id="planos" class="section">
     <div class="container">
-
         <h2 class="section-title">Planos</h2>
 
         <div class="services-grid">
-
             <div class="card animate">
                 <h3>Plano Empresarial</h3>
                 <p>Infraestrutura dedicada e suporte especializado.</p>
@@ -135,29 +155,38 @@
 
             <div class="card animate">
                 <h3>Plano Corporativo</h3>
-                <p>Alta performance e escalabilidade para grandes operações.</p>
+                <p>Alta performance e escalabilidade.</p>
                 <a href="https://wa.me/5519991093747" target="_blank" class="btn contratar-btn">
                     Contratar
                 </a>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- ================= CONTATO ================= -->
+<!-- ================= CONTATO COM ENVIO DE EMAIL ================= -->
 <section id="contato" class="section">
     <div class="container">
-
         <h2 class="section-title">Entre em Contato</h2>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <textarea rows="5" placeholder="Mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <form 
+            action="https://formsubmit.co/lariane.bachega@gmail.com" 
+            method="POST"
+            class="contact-form"
+        >
 
+            <input type="hidden" name="_subject" value="Novo contato pelo site Bachega">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <input type="text" name="Nome" placeholder="Nome Completo" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="text" name="WhatsApp" placeholder="WhatsApp com DDD" required>
+            <textarea name="Mensagem" rows="5" placeholder="Descreva sua necessidade" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+
+        </form>
     </div>
 </section>
 
@@ -171,7 +200,6 @@
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
 
-<!-- SCRIPT -->
 <script src="script.js"></script>
 
 </body>
