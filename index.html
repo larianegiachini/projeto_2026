@@ -1,162 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bachega | Armazenamento em Nuvem</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <title>Bachega Especialista em Armazenamento de Dados em Nuvem</title>
+
+    <!-- Google Font SaaS Moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container header-container">
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container header-container">
+        
+        <a href="#inicio" class="logo-link">
+            <img src="logo-bachega.png" alt="Bachega Logo" class="logo">
+        </a>
 
-    <a href="#" class="logo-wrapper">
-      <img src="logo-bachega.png" class="logo-img">
-      <h1 class="brand-name">
-        Bachega Especialista em Armazenamento de Dados em Nuvem
-      </h1>
-    </a>
+        <h1 class="company-name">
+            Bachega Especialista em Armazenamento de Dados em Nuvem
+        </h1>
 
-    <nav>
-      <a href="#infraestrutura">Infraestrutura</a>
-      <a href="#solucoes">Soluções</a>
-      <a href="#sobre">Quem Somos</a>
-    </nav>
+        <nav>
+            <a href="#servicos">Serviços</a>
+            <a href="#planos">Planos</a>
+            <a href="#contato" class="btn btn-header">Fale Conosco</a>
+        </nav>
 
-  </div>
+    </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h2>Proteção Inteligente para Seus Dados</h2>
-    <p>Infraestrutura certificada, alta disponibilidade e segurança ponta-a-ponta.</p>
-  </div>
-</section>
-
-<!-- INFRAESTRUTURA -->
-<section id="infraestrutura" class="section">
-  <div class="container">
-
-    <span class="tag">Armazene em data centers líderes do mercado</span>
-
-    <h2>Infraestrutura de qualidade escolhida pelas maiores empresas de tecnologia do mundo</h2>
-
-    <p class="infra-desc">
-      Prevenção é a maior segurança para a sua empresa. Utilizamos infraestrutura certificada
-      e com alta disponibilidade para missão crítica.
-    </p>
-
-    <div class="infra-grid">
-
-      <div class="infra-item">
-        <h4>Alta disponibilidade</h4>
-        <p>SLA de operação de 99,749%</p>
-      </div>
-
-      <div class="infra-item">
-        <h4>Conectividade</h4>
-        <p>Conexão com as principais operadoras de Telecom</p>
-      </div>
-
-      <div class="infra-item">
-        <h4>Conformidade e governança</h4>
-        <p>Infraestrutura alinhada à LGPD e padrões globais</p>
-      </div>
-
-      <div class="infra-item">
-        <h4>Energia</h4>
-        <p>Baterias e geradores com autonomia de até 48h</p>
-      </div>
-
+<!-- ================= HERO ================= -->
+<section id="inicio" class="hero">
+    <div class="container">
+        <h2>Infraestrutura de qualidade escolhida pelas maiores empresas de tecnologia</h2>
+        <p>Alta disponibilidade, segurança e proteção de dados em nuvem.</p>
     </div>
-  </div>
 </section>
 
-<!-- SOLUÇÕES -->
-<section id="solucoes" class="section light">
-  <div class="container">
+<!-- ================= SERVIÇOS ================= -->
+<section id="servicos" class="section">
+    <div class="container">
 
-    <h2>Nossas Soluções</h2>
+        <h2 class="section-title">Nossos Serviços</h2>
 
-    <div class="solutions-grid">
+        <div class="services-grid">
 
-      <div class="solution-card">
-        <h3>Cloud Backup</h3>
-        <button onclick="toggleDetails('cloud')" class="details-btn">Mais Detalhes</button>
+            <!-- CLOUD BACKUP -->
+            <div class="card animate">
+                <h3>Cloud Backup</h3>
+                <button class="btn toggle-btn">Mais Detalhes</button>
 
-        <div id="cloud" class="details">
-          <ul>
-            <li>Plataforma fácil de operar com monitoramento 24x7</li>
-            <li>Contas ilimitadas sem custo de licenciamento</li>
-            <li>Criptografia ponta-a-ponta</li>
-            <li>Deduplicação de dados</li>
-            <li>Multicloud</li>
-            <li>Suporte a arquivos, bancos, servidores físicos/virtuais e Microsoft 365</li>
-          </ul>
+                <div class="hidden-content">
+                    <ul>
+                        <li>Plataforma fácil de operar</li>
+                        <li>Monitoramento 24x7</li>
+                        <li>Contas ilimitadas</li>
+                        <li>Criptografia ponta-a-ponta</li>
+                        <li>Deduplicação de dados</li>
+                        <li>Multicloud</li>
+                        <li>Arquivos, bancos, servidores físicos e virtuais</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- OBJECT STORAGE -->
+            <div class="card animate">
+                <h3>Object Storage</h3>
+                <button class="btn toggle-btn">Mais Detalhes</button>
+
+                <div class="hidden-content">
+                    <ul>
+                        <li>Armazenamento escalável</li>
+                        <li>Alta disponibilidade</li>
+                        <li>Sem custo upload/download</li>
+                        <li>Sem custo IOPS</li>
+                        <li>Imutabilidade contra ransomware</li>
+                        <li>Faturamento por volume</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-      </div>
+    </div>
+</section>
 
-      <div class="solution-card">
-        <h3>Object Storage</h3>
-        <button onclick="toggleDetails('object')" class="details-btn">Mais Detalhes</button>
+<!-- ================= QUEM SOMOS ================= -->
+<section class="section about">
+    <div class="container about-box animate">
 
-        <div id="object" class="details">
-          <ul>
-            <li>Armazenamento escalável e alta disponibilidade</li>
-            <li>Sem custo para upload e download</li>
-            <li>Sem custo de IOPS, GET ou PUT</li>
-            <li>Faturamento somente por volume</li>
-            <li>Imutabilidade contra ransomware</li>
-          </ul>
+        <h2>Quem Somos</h2>
+        <p><strong>Criamos soluções confiáveis que transformam negócios e protegem o amanhã.</strong></p>
+
+        <p>
+            Fundada em 2026, somos uma empresa focada em simplificar soluções de armazenamento em nuvem.
+            Atendemos empresas de diversos segmentos e tamanhos, garantindo segurança e disponibilidade global.
+        </p>
+
+        <p>
+            Oferecemos infraestrutura de qualidade e proteção de dados nos melhores data centers da América Latina.
+        </p>
+
+    </div>
+</section>
+
+<!-- ================= PLANOS ================= -->
+<section id="planos" class="section">
+    <div class="container">
+        <h2 class="section-title">Planos</h2>
+
+        <div class="services-grid">
+
+            <div class="card animate">
+                <h3>Plano Empresarial</h3>
+                <p>Infraestrutura dedicada para empresas.</p>
+                <a href="https://wa.me/5519991093747" class="btn contratar-btn">Contratar</a>
+            </div>
+
+            <div class="card animate">
+                <h3>Plano Corporativo</h3>
+                <p>Alta performance e escalabilidade.</p>
+                <a href="https://wa.me/5519991093747" class="btn contratar-btn">Contratar</a>
+            </div>
+
         </div>
-      </div>
-
     </div>
-
-  </div>
 </section>
 
-<!-- QUEM SOMOS -->
-<section id="sobre" class="section">
-  <div class="container">
+<!-- ================= CONTATO ================= -->
+<section id="contato" class="section contato">
+    <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
 
-    <div class="about-card">
-      <h2>Quem Somos</h2>
-      <p>
-        Criamos soluções confiáveis que transformam negócios e protegem o amanhã.
-      </p>
-
-      <p>
-        Fundada em 2026, somos uma empresa focada em simplificar soluções de armazenamento em nuvem.
-      </p>
-
-      <p>
-        Atendemos empresas de diversos segmentos e tamanhos, apoiando-as a gerenciar seus dados com segurança
-        em qualquer parte do mundo.
-      </p>
-
-      <p>
-        Oferecemos infraestrutura de qualidade e proteção de dados nos melhores data centers da América Latina.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  © 2026 Bachega - Todos os direitos reservados
-</footer>
-
-<!-- WHATSAPP -->
-<a href="https://wa.me/5519991093747" target="_blank" class="whatsapp-button">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-</a>
-
-<script src="script.js"></script>
-</body>
-</html>
+        <form class="contact-form">
+            <input type="text" placeholder="Nome">
+            <input type="email

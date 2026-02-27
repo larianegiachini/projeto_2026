@@ -172,3 +172,54 @@ footer {
 .whatsapp-button img {
   width: 32px;
 }
+
+/* HEADER AO ROLAR */
+.header-scrolled {
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RIPPLE EFFECT */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.6);
+    transform: scale(0);
+    animation: ripple-animation 600ms linear;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* WHATSAPP PULSE */
+.pulse {
+    animation: pulse-animation 1s ease;
+}
+
+@keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
