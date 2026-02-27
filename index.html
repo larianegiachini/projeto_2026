@@ -6,7 +6,7 @@
 
     <title>Bachega Especialista em Armazenamento de Dados em Nuvem</title>
 
-    <!-- Google Font SaaS Moderna -->
+    <!-- Fonte SaaS Moderna -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
@@ -18,9 +18,9 @@
 <!-- ================= HEADER ================= -->
 <header>
     <div class="container header-container">
-        
-        <a href="#inicio" class="logo-link">
-            <img src="logo-bachega.png" alt="Bachega Logo" class="logo">
+
+        <a href="#inicio">
+            <img src="logo-bachega.png" alt="Logo Bachega" class="logo">
         </a>
 
         <h1 class="company-name">
@@ -55,17 +55,19 @@
             <!-- CLOUD BACKUP -->
             <div class="card animate">
                 <h3>Cloud Backup</h3>
+                <p>Backup corporativo seguro e escalável.</p>
                 <button class="btn toggle-btn">Mais Detalhes</button>
 
                 <div class="hidden-content">
                     <ul>
                         <li>Plataforma fácil de operar</li>
+                        <li>Gerenciamento integrado na nuvem</li>
                         <li>Monitoramento 24x7</li>
-                        <li>Contas ilimitadas</li>
+                        <li>Contas ilimitadas sem licenciamento</li>
                         <li>Criptografia ponta-a-ponta</li>
                         <li>Deduplicação de dados</li>
                         <li>Multicloud</li>
-                        <li>Arquivos, bancos, servidores físicos e virtuais</li>
+                        <li>Arquivos, bancos de dados, servidores físicos e virtuais</li>
                     </ul>
                 </div>
             </div>
@@ -73,16 +75,17 @@
             <!-- OBJECT STORAGE -->
             <div class="card animate">
                 <h3>Object Storage</h3>
+                <p>Armazenamento escalável com alta disponibilidade.</p>
                 <button class="btn toggle-btn">Mais Detalhes</button>
 
                 <div class="hidden-content">
                     <ul>
-                        <li>Armazenamento escalável</li>
-                        <li>Alta disponibilidade</li>
+                        <li>Restauração imediata</li>
                         <li>Sem custo upload/download</li>
-                        <li>Sem custo IOPS</li>
-                        <li>Imutabilidade contra ransomware</li>
+                        <li>Sem custo IOPS, GET, PUT</li>
                         <li>Faturamento por volume</li>
+                        <li>Imutabilidade contra ransomware</li>
+                        <li>Alta disponibilidade</li>
                     </ul>
                 </div>
             </div>
@@ -96,11 +99,15 @@
     <div class="container about-box animate">
 
         <h2>Quem Somos</h2>
+
         <p><strong>Criamos soluções confiáveis que transformam negócios e protegem o amanhã.</strong></p>
 
         <p>
             Fundada em 2026, somos uma empresa focada em simplificar soluções de armazenamento em nuvem.
-            Atendemos empresas de diversos segmentos e tamanhos, garantindo segurança e disponibilidade global.
+        </p>
+
+        <p>
+            Atendemos empresas de diversos segmentos e tamanhos, apoiando-as a gerenciar seus dados com segurança em qualquer parte do mundo.
         </p>
 
         <p>
@@ -113,20 +120,25 @@
 <!-- ================= PLANOS ================= -->
 <section id="planos" class="section">
     <div class="container">
+
         <h2 class="section-title">Planos</h2>
 
         <div class="services-grid">
 
             <div class="card animate">
                 <h3>Plano Empresarial</h3>
-                <p>Infraestrutura dedicada para empresas.</p>
-                <a href="https://wa.me/5519991093747" class="btn contratar-btn">Contratar</a>
+                <p>Infraestrutura dedicada e suporte especializado.</p>
+                <a href="https://wa.me/5519991093747" target="_blank" class="btn contratar-btn">
+                    Contratar
+                </a>
             </div>
 
             <div class="card animate">
                 <h3>Plano Corporativo</h3>
-                <p>Alta performance e escalabilidade.</p>
-                <a href="https://wa.me/5519991093747" class="btn contratar-btn">Contratar</a>
+                <p>Alta performance e escalabilidade para grandes operações.</p>
+                <a href="https://wa.me/5519991093747" target="_blank" class="btn contratar-btn">
+                    Contratar
+                </a>
             </div>
 
         </div>
@@ -134,10 +146,33 @@
 </section>
 
 <!-- ================= CONTATO ================= -->
-<section id="contato" class="section contato">
+<section id="contato" class="section">
     <div class="container">
+
         <h2 class="section-title">Entre em Contato</h2>
 
         <form class="contact-form">
-            <input type="text" placeholder="Nome">
-            <input type="email
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer style="text-align:center; padding:30px 0; background:#f5f5f5;">
+    <p>© 2026 Bachega Especialista em Armazenamento de Dados em Nuvem</p>
+</footer>
+
+<!-- ================= WHATSAPP FLUTUANTE ================= -->
+<a href="https://wa.me/5519991093747" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
