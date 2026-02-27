@@ -1,4 +1,5 @@
-document.querySelector("form").addEventListener("submit", function(e){
-  e.preventDefault();
-  alert("Mensagem enviada com sucesso!");
-});
+function toggleDetails(id) {
+  const element = document.getElementById(id);
+  element.style.display =
+    element.style.display === "block" ? "none" : "block";
+}
