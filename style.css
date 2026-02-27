@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #f4f6f9;
-  color: #333;
+  background: #ffffff;
+  color: #0f172a;
 }
 
 .container {
@@ -16,56 +16,80 @@ body {
   margin: auto;
 }
 
+/* HEADER */
+
 header {
-  background: #0f172a;
+  background: #0d47a1; /* Azul principal */
   padding: 20px 0;
   color: white;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-header .container {
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 60px;
+}
+
+.logo-text h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.logo-text span {
+  font-size: 12px;
+  color: #c8facc;
 }
 
 nav a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .btn-nav {
-  background: #2563eb;
+  background: #00c853; /* Verde */
   padding: 8px 15px;
   border-radius: 5px;
 }
 
+/* HERO */
+
 .hero {
-  background: linear-gradient(to right, #0f172a, #1e3a8a);
+  background: linear-gradient(to right, #0d47a1, #00c853);
   color: white;
   padding: 100px 0;
   text-align: center;
 }
 
 .hero h2 {
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 20px;
 }
 
 .btn-primary {
-  background: #2563eb;
+  background: white;
+  color: #0d47a1;
   padding: 12px 25px;
   border-radius: 6px;
   text-decoration: none;
-  color: white;
+  font-weight: bold;
   display: inline-block;
   margin-top: 20px;
 }
+
+/* SECTIONS */
 
 .section {
   padding: 80px 0;
@@ -75,6 +99,7 @@ nav a {
 .section h2 {
   margin-bottom: 40px;
   font-size: 30px;
+  color: #0d47a1;
 }
 
 .features {
@@ -85,16 +110,15 @@ nav a {
 }
 
 .card {
-  background: white;
+  background: #f5faff;
   padding: 25px;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border: 1px solid #e0f2f1;
 }
 
-.dark {
-  background: #0f172a;
-  color: white;
+.light-bg {
+  background: #e8f5e9;
 }
 
 .services {
@@ -106,6 +130,8 @@ nav a {
   margin-bottom: 10px;
 }
 
+/* PRICING */
+
 .pricing {
   display: flex;
   gap: 20px;
@@ -114,21 +140,22 @@ nav a {
 }
 
 .plan {
-  background: white;
+  background: #ffffff;
   padding: 30px;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  border: 2px solid #e3f2fd;
 }
 
 .plan .price {
   font-size: 22px;
   margin: 15px 0;
-  color: #2563eb;
+  color: #00c853;
+  font-weight: bold;
 }
 
 .plan button {
-  background: #2563eb;
+  background: #0d47a1;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -137,8 +164,15 @@ nav a {
 }
 
 .destaque {
+  border: 2px solid #00c853;
   transform: scale(1.05);
-  border: 2px solid #2563eb;
+}
+
+/* CONTACT */
+
+.contact-section {
+  background: #0d47a1;
+  color: white;
 }
 
 form {
@@ -156,7 +190,7 @@ form input, form textarea {
 }
 
 form button {
-  background: #2563eb;
+  background: #00c853;
   color: white;
   padding: 10px;
   border: none;
@@ -164,8 +198,10 @@ form button {
   cursor: pointer;
 }
 
+/* FOOTER */
+
 footer {
-  background: #020617;
+  background: #002171;
   color: white;
   text-align: center;
   padding: 20px;
